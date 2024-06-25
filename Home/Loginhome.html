@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imagens/favicon-16x16.png">
+    <link rel="manifest" href="../imagens/site.webmanifest">
+    <!--Icons Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Font Lilita One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <!--Font Style Script-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <!--Font play-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+      *{
+        padding: 0;
+        margin:0;
+      }
+      body{
+        background-color:#ffcbdb ;
+        padding: 0;
+        margin: 0;
+      }
+      .logo{
+        font-family: "Style Script", cursive;
+        font-weight: 850;
+        color: #ffa8b5;
+        font-size: 40px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+      }
+      .navbar-brand:hover{
+        color:white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffa8b5;
+      }
+      .nav-text{
+        color: #ffa8b5;
+      }
+      .navbar-nav .nav-link.active{
+        color: #ffa8b5;
+        text-decoration: underline white;
+        font-weight: 800;
+      }
+      .navbar-nav .nav-link.active:hover{
+        color: white;
+      }
+      .navbar-nav .nav-link.show{
+        color: white;
+      }
+      .nav-link:focus, .nav-link:hover{
+        color: white;
+      }
+      .dropdown-menu{
+        background-color: #ffa8b5;
+      }
+      .dropdown-item{
+        color: white;
+      }
+      .dropdown-item:focus, .dropdown-item:hover{
+        color: #ffcbdb;
+        text-decoration: underline white;
+        background-color: #ffa8b5;
+      }
+      #login-btn{
+        background-color: white;
+        color: #ffa8b5;
+        font-weight: 550;
+        border-color: #ffa8b5;
+      }
+      .img-thumbnail-1 {
+        padding: .25rem;
+        max-width: 80%;
+        height: auto;
+      }
+      .container{
+        padding: 40px;
+        padding-bottom: 40px;
+        max-width: 100%;
+      }
+      .title{
+        font-family: "Playwrite NG Modern";
+        font-weight: 700;
+        text-decoration: underline white;
+      }
+      p{
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+      }
+      .container2{
+        background-color: #ffa8b5;
+        padding: 30px;
+        padding-bottom: 45px;
+        max-width: 100%;
+      }
+      #gif-guiche{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #gif-guiche img{
+        max-width: 100%;
+        height: auto;
+      }
+      footer{
+        background-color: #ffcbdb;
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+      .logo-footer{
+        font-family: "Style Script", cursive;
+        font-weight: 750;
+        color: #ffa8b5;
+        font-size: 40px;
+        text-decoration: none;
+      }
+      .icons-footer{
+        font-size: 30px;
+      }
+      .Instagram-footer{
+        color: white;
+        margin-right: 5px;
+      }
+      .Whatsapp-footer{
+        color: white;
+      }
+    </style>
+
+    <title>Painéis de controle - Biutifu Faxions</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #ffcbdb;">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="Loginhome.html">Biutifu Faxions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active nav-text" aria-current="page" href="Loginhome.html">Início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gerenciar Contas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../cadastro/cadastro.html"><i class="bi bi-person-fill"></i> Cadastrar admin</a></li>
+              <li><a class="dropdown-item" href="../Cdguiche/cdsenha/cdsenha.html"><i class="bi bi-lock-fill"></i> Gerenciar Senhas</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form>
+          <a href="../index.html"><button class="btn btn-sm btn-outline-secondary" id="login-btn" type="button"><i class="bi bi-box-arrow-right"></i> Sair</button></a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="gif col-6">
+        <img src="../imagens/Work in progress-cuate.png" class="img-thumbnail-1">
+      </div>
+      <div class="info col">
+        <h1 class="text-center title">Controle de Atendimento</h1>
+        <p>Nessa seção, você tem o controle total sobre o fluxo de clientes em sua seção de beleza. Chame os clientes em espera e gerencie o atendimento de forma eficiente, garantindo que todos sejam atendidos rapidamente e com qualidade.</p>
+
+        <p>Controle de Senhas</p>
+          
+        <p>Chame os clientes em espera com facilidade, visualizando a lista de senhas em tempo real. Você pode chamar os clientes pelo nome ou pela senha, garantindo que todos sejam atendidos na ordem certa.</p>
+          
+        <p>Relatório de Atendimento</p>
+          
+          <p>Acompanhe o desempenho do seu atendimento em tempo real, visualizando o relatório de atendimento do dia e dos passados. Isso permite que você identifique oportunidades de melhoria e otimize o processo de atendimento para melhor atender às necessidades dos clientes.s</p>
+          <div>
+            <a href="../Relatorios/card/card.html" target="_blank"><button type="button" class="btn btn-primary" id="login-btn">Chamar</button></a>
+            <a href="../Relatorios/relatatent.html" target="_blank"><button type="button" class="btn btn-primary" id="login-btn">Relatório de Atendimentos</button></a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container container2">
+    <div class="row">
+      <div class="info col">
+        <h1 class="title text-center">Gerenciar Painéis</h1>
+        <p>O Gerenciar Painéis é a central de controle para gerenciar a experiência do cliente no guiche. Aqui, você pode configurar a música de espera, verificar a exibição do painel e personalizar a mensagem em tela.</p>
+
+        <p>Música de Espera</p>
+          
+        <p>Escolha a música de espera que será tocada para os clientes enquanto eles aguardam seu atendimento. Você pode selecionar uma música padrão ou carregar uma música personalizada.</p>
+          
+        <p>Exibição do Painel</p>
+          
+        <p>Verifique a exibição do painel para garantir que os clientes possam ver claramente as informações exibidas. Você pode ajustar o brilho, o contraste e a saturação do painel para garantir que a exibição seja ótima em todas as condições de iluminação.</p>
+          
+        <p>Mensagem em Tela</p>
+          
+        <p>Personalize a mensagem em tela para dar as boas-vindas aos clientes, informar sobre promoções ou fornecer outras informações importantes. Você pode escolher a fonte, o tamanho e a cor da mensagem para garantir que ela seja fácil de ler e seja visualmente atraente.</p>
+          
+        <p>Com o Painel de Guiche, você pode facilmente gerenciar a experiência do cliente no guiche e garantir que eles se sintam bem-vindos e atendidos.</p>
+        <a href="../Paineis/painel01.html" target="_blank"><button type="button" class="btn btn-primary" id="login-btn">Config. Guiche-1</button></a>
+        <a href="../Paineis/painel02.html" target="_blank"><button type="button" class="btn btn-primary" id="login-btn">Config. Guiche-2</button></a>
+        <a href="../telatotem/totem.html" target="_blank"><button type="button" class="btn btn-primary" id="login-btn">Config. Totem</button></a>
+      </div>
+      <div class="gif col-6" id="gif-guiche">
+        <img src="../imagens/Working.gif">
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <div>
+      <a class="logo-footer" href="Loginhome.html">Biutifu Faxions</a>
+    </div>
+    <div class="icons-footer">
+      <a href="#" class="Instagram-footer"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="Whatsapp-footer"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </footer>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</html>

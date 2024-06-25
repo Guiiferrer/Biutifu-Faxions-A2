@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="imagens/site.webmanifest">
+    <!--Icons Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Font Lilita One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <!--Font Style Script-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <!--Font play-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+      *{
+        padding: 0;
+        margin:0;
+      }
+      body{
+        background-color:#ffcbdb ;
+        padding: 0;
+        margin: 0;
+      }
+      .logo{
+        font-family: "Style Script", cursive;
+        font-weight: 850;
+        color: #ffa8b5;
+        font-size: 40px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+      }
+      .navbar-brand:hover{
+        color:white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffa8b5;
+      }
+      .nav-text{
+        color: #ffa8b5;
+      }
+      .navbar-nav .nav-link.active{
+        color: #ffa8b5;
+        text-decoration: underline white;
+        font-weight: 800;
+      }
+      .navbar-nav .nav-link.active:hover{
+        color: white;
+      }
+      .navbar-nav .nav-link.show{
+        color: white;
+      }
+      .nav-link:focus, .nav-link:hover{
+        color: white;
+      }
+      .dropdown-menu{
+        background-color: #ffa8b5;
+      }
+      .dropdown-item{
+        color: white;
+      }
+      .dropdown-item:focus, .dropdown-item:hover{
+        color: #ffcbdb;
+        text-decoration: underline white;
+        background-color: #ffa8b5;
+      }
+      #login-btn{
+        background-color: white;
+        color: #ffa8b5;
+        font-weight: 550;
+        border-color: #ffa8b5;
+      }
+      .gif{
+        margin-right: 15px;
+      }
+      .container{
+        padding: 20px;
+        padding-bottom: 40px;
+        max-width: 100%;
+      }
+      .title{
+        font-family: "Playwrite NG Modern";
+        font-weight: 700;
+        text-decoration: underline white;
+      }
+      p{
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+      }
+      .container2{
+        background-color: #ffa8b5;
+        padding: 30px;
+        padding-bottom: 45px;
+        max-width: 100%;
+      }
+      footer{
+        background-color: #ffa8b5;
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+      .logo-footer{
+        font-family: "Style Script", cursive;
+        font-weight: 750;
+        color: #ffcbdb;
+        font-size: 40px;
+        text-decoration: none;
+      }
+      .icons-footer{
+        font-size: 30px;
+      }
+      .Instagram-footer{
+        color: white;
+        margin-right: 5px;
+      }
+      .Whatsapp-footer{
+        color: white;
+      }
+
+    </style>
+    <title>Início - Biutifu Faxions</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #ffcbdb;">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="index.html">Biutifu Faxions</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active nav-text" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active nav-text" aria-current="page" href="Cdguiche/cdguiche.html">Agendar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active nav-text" aria-current="page" href="colaboradores/colabora.html">Colaboradores</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contato
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="bi bi-whatsapp"></i> Whatsapp</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form>
+              <a href="Login/Login.html"><button class="btn btn-sm btn-outline-secondary" id="login-btn" type="button">Login</button></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="gif col-6 ">
+          <img src="imagens/Manicurist.gif">
+          </div>
+
+          <div class="info col ">
+          <h1 class="text-center title">Manicure e Pedicure</h1>
+          <p>Descubra a beleza das suas mãos e pés!</p>
+
+          <p>Nossa equipe de profissionais especializados em manicure e pedicure está aqui para lhe proporcionar uma experiência de relaxamento e rejuvenescimento. Com técnicas avançadas e produtos de alta qualidade, vamos transformar suas mãos e pés em obras de arte.</p> 
+
+           <p>Manicure: desfrute de uma limpeza profunda, modelagem de unhas, aplicação de esmalte e      acabamento perfeito.</p>
+
+            <p>Pedicure: relaxe com uma massagem nos pés, remoção de calos e células mortas, e um acabamento brilhante.</p> 
+
+            <p>Reserve agora e desbloqueie a beleza das suas mãos e pés!</p>
+            <div>
+            <a href="Cdguiche/cdguiche.html"><button type="button" class="btn btn-primary" id="login-btn">Agendar</button></a>
+            <a href="#"><button type="button" class="btn btn-primary" id="login-btn"><i class="bi bi-whatsapp"></i> Agendar com atendente</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="container container2">
+          <div class="row">
+            <div class="info col">
+            <h1 class="text-center title">Cabeleireira</h1>
+            <p>Transforme seu cabelo em uma obra de arte!</p>
+
+             <p>Nossa equipe de cabeleireiros especializados está aqui para lhe oferecer os melhores serviços de corte, progressiva, escovas e muito mais. Com produtos de alta qualidade e técnicas inovadoras, vamos criar um look personalizado que lhe faz sentir confiante e belo.</p> 
+              
+              <p>Corte: desfrute de um corte personalizado que lhe valorize o rosto e o estilo.</p> 
+
+              <p>Progressiva: obtenha um cabelo saudável e forte com nossa técnica de progressiva.</p> 
+
+              <p>Escovas: descubra a beleza de um cabelo escovado com nossas ferramentas de alta qualidade.</p> 
+
+              <p>Reserve agora e transforme seu cabelo em uma obra de arte!</p>
+              <div>
+                <a href="Cdguiche/cdguiche.html"><button type="button" class="btn btn-primary" id="login-btn">Agendar</button></a>
+                <a href="#"><button type="button" class="btn btn-primary" id="login-btn"><i class="bi bi-whatsapp"></i> Agendar com atendente</button></a></div>
+            </div>
+            <div class="gif col-6">
+            <img src="imagens/Hairdresser.gif">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="gif col-6">
+              <img src="imagens/Massage therapist.gif">
+            </div>
+            <div class="info col">
+              <h1 class="text-center title">Massagista</h1>
+              <p>Relaxe e rejuvenesça com nossas massagens terapêuticas!</p>
+
+              <p>Nossa equipe de massagistas especializados está aqui para lhe oferecer uma experiência de relaxamento e bem-estar. Com técnicas avançadas e óleos essenciais, vamos ajudá-lo a se livrar do estresse e a encontrar a paz interior.</p>
+                
+              <p>Massagem terapêutica: desfrute de uma massagem personalizada que lhe alivia dores e tensões.</p>
+
+              <p>Massagem relaxante: relaxe e se sinta leve com nossa massagem relaxante.</p>
+
+              <p>Reserve agora e desbloqueie o poder do relaxamento!</p>
+              <div>
+                <a href="Cdguiche/cdguiche.html"><button type="button" class="btn btn-primary" id="login-btn">Agendar</button></a>
+                <a href="#"><button type="button" class="btn btn-primary" id="login-btn"><i class="bi bi-whatsapp"></i> Agendar com atendente</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <footer class="text-center">
+        <div>
+          <a class="logo-footer" href="index.html">Biutifu Faxions</a>
+        </div>
+        <div class="icons-footer">
+          <a href="#" class="Instagram-footer"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="Whatsapp-footer"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
