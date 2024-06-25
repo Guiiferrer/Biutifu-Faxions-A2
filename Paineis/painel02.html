@@ -280,11 +280,15 @@
           const now = new Date();
       
           // get the current date and time as a string
-          const currentDateTime = now.toLocaleDateString();
+          const currentDateTime = now.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
           const currentHour = now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
       
+          // format the date string to day/month/year
+          const [day, month, year] = currentDateTime.split('/');
+          const formattedDate = `${day}/${month}/${year}`;
+      
           // update the textContent property of the span element with the id of datetime
-          document.querySelector('#datetime').textContent = currentDateTime;
+          document.querySelector('#datetime').textContent = formattedDate;
           document.querySelector('#hour').textContent = currentHour;
         }
       
