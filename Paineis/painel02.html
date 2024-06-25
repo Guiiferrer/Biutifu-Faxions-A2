@@ -215,7 +215,7 @@
         <div class="row">
             <div class="col-6">
                 <div class="row">
-                    <iframe width="800" height="480" src="https://www.youtube.com/embed/videoseries?si=6dbemJVHoSdEgtY0&amp;list=PLDUAx1zZF7luJIaRqrvENCw6mxz9J9Riu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="800" height="480" src="https://www.youtube.com/embed/videoseries?si=6dbemJVHoSdEgtY0&amp;list=PLDUAx1zZF7luJIaRqrvENCw6mxz9J9Riu?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="row linha">
                     <div class="col" id="col-cidade">
@@ -226,8 +226,8 @@
                         <i class="bi bi-cloud-sun-fill"></i>
                     </div>
                     <div class="col" id="col-datas">
-                        <div class="row">27/06/2024</div>
-                        <div class="row">14:00</div>
+                        <div class="row"><span id="datetime"></span></div>
+                        <div class="row"><span id="hour"></span></div>
                     </div>
                 </div>
             </div>
@@ -273,5 +273,23 @@
         </div>
       </footer>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // create a function to update the date and time
+        function updateDateTime() {
+          // create a new Date object
+          const now = new Date();
+      
+          // get the current date and time as a string
+          const currentDateTime = now.toLocaleDateString();
+          const currentHour = now.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+      
+          // update the textContent property of the span element with the id of datetime
+          document.querySelector('#datetime').textContent = currentDateTime;
+          document.querySelector('#hour').textContent = currentHour;
+        }
+      
+        // call the updateDateTime function every second
+        setInterval(updateDateTime, 1000);
+      </script>
 </body>
 </html>
